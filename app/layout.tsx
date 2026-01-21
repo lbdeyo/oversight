@@ -54,7 +54,7 @@ export default function RootLayout({
               loop
               muted
               playsInline
-              className="absolute inset-0 h-full w-full object-cover rounded-lg video-dot-mask opacity-50"
+              className="absolute inset-0 h-full w-full object-cover rounded-lg video-dot-mask opacity-75 md:opacity-50"
             >
               <source src="/vid/oversight-home-bg.mp4" type="video/mp4" />
             </video>
