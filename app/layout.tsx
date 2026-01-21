@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
       >
         <div className="flex min-h-screen flex-col">
-          <nav className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-sm">
+          <nav className="sticky top-0 z-50 w-full bg-zinc-950/80 backdrop-blur-sm">
             <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 items-center">
                 <Image
