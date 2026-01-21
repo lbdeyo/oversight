@@ -6,23 +6,37 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <h1 className="text-5xl sm:text-6xl md:text-7xl tracking-wide" style={{ fontFamily: 'video, sans-serif', fontWeight: 400 }}>
+        <p className="mb-2 text-xl text-white" style={{ fontFamily: 'video, sans-serif', fontWeight: 300 }}>
           <span className="bg-black px-2 py-1 inline-block">
             <TypeAnimation
-              sequence={['Oversight']}
+              sequence={['A secret commission. A ticking clock. A decision that can\'t be undone.']}
               wrapper="span"
-              speed={75}
+              speed={50}
+              repeat={0}
+              cursor={false}
+            />
+          </span>
+        </p>
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wide text-amber-400 uppercase" style={{ fontFamily: 'video, sans-serif', fontWeight: 400 }}>
+          <span className="bg-black px-2 py-1 inline-block">
+            <TypeAnimation
+              sequence={[
+                4000, // Wait for tagline to finish typing (~75 chars * 50ms = 3750ms + buffer)
+                'Oversight'
+              ]}
+              wrapper="span"
+              speed={40}
               repeat={0}
               cursor={false}
             />
           </span>
         </h1>
-        <p className="mt-2 text-2xl text-white" style={{ fontFamily: 'video, sans-serif', fontWeight: 300 }}>
+        <p className="mt-2 text-2xl text-white whitespace-pre-line" style={{ fontFamily: 'video, sans-serif', fontWeight: 300 }}>
           <span className="bg-black px-2 py-1 inline-block">
             <TypeAnimation
               sequence={[
-                300, // Wait 0.3 second after H1 finishes
-                'A new play by L.B. Deyo. Coming to Austin, TX in 2026.',
+                4400, // Wait for tagline + H1 to finish (4000ms + ~360ms + buffer)
+                'A new play by L.B. Deyo.\nComing to Austin, TX in 2026.',
               ]}
               wrapper="span"
               speed={50}
