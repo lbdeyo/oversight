@@ -5,7 +5,7 @@ export default function Home() {
         <h1 className="text-7xl font-bold tracking-wide" style={{ fontFamily: 'video, sans-serif' }}>
           <span className="bg-black px-2 py-1 inline-block">Oversight</span>
         </h1>
-        <p className="mt-4 text-2xl text-zinc-400">
+        <p className="mt-2 text-2xl text-zinc-400" style={{ fontFamily: 'video, sans-serif', fontWeight: 300 }}>
           <span className="bg-black px-2 py-1 inline-block">
             A new play by L.B. Deyo. Coming to Austin, TX in 2026.
           </span>
