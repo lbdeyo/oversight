@@ -41,7 +41,7 @@ export default function RootLayout({
                   width={120}
                   height={32}
                   priority
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                 />
                 {/* Add nav items here as needed */}
               </div>
@@ -61,18 +61,21 @@ export default function RootLayout({
             <div className="relative z-10">
               {children}
             </div>
-          </main>
-          <footer className="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
-            <div className="flex justify-end">
+            <a 
+              href="https://the-zahir.org" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="absolute bottom-4 right-4 z-20 zahir-logo-link"
+            >
               <Image
                 src="/img/zahir-logo.svg"
                 alt="Zahir"
-                width={100}
-                height={32}
-                className="h-6 w-auto"
+                width={300}
+                height={96}
+                className="h-[3.75rem] w-auto"
               />
-            </div>
-          </footer>
+            </a>
+          </main>
         </div>
       </body>
     </html>

@@ -33,3 +33,11 @@ body {
   -webkit-mask-size: 10px 10px;
   -webkit-mask-repeat: repeat;
 }
+
+.zahir-logo-link {
+  transition: filter 0.2s ease;
+}
+
+.zahir-logo-link:hover img {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(7472%) hue-rotate(0deg);
+}
