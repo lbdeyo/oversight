@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,18 +33,28 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
       >
         <div className="flex min-h-screen flex-col">
-          <nav className="sticky top-0 z-50 w-full bg-zinc-950/80 backdrop-blur-sm">
+          <nav className="sticky top-0 z-50 w-full bg-gray-950 backdrop-blur-sm border-b border-gray-800">
             <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-              <div className="flex h-16 items-center">
-                <Image
-                  src="/img/oversight-logo.svg"
-                  alt="Oversight"
-                  width={120}
-                  height={32}
-                  priority
-                  className="h-10 w-auto"
-                />
-                {/* Add nav items here as needed */}
+              <div className="flex h-16 items-center justify-between">
+                <div className="nav-logo-wrapper">
+                  <Link href="/">
+                    <Image
+                      src="/img/oversight-logo.svg"
+                      alt="Oversight"
+                      width={120}
+                      height={32}
+                      priority
+                      className="h-10 w-auto"
+                    />
+                  </Link>
+                </div>
+                <Link 
+                  href="/about"
+                  className="text-white hover:text-amber-400 transition-colors duration-200"
+                  style={{ fontFamily: 'video, sans-serif', fontWeight: 300 }}
+                >
+                  About
+                </Link>
               </div>
             </div>
           </nav>

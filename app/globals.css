@@ -41,3 +41,16 @@ body {
 .zahir-logo-link:hover img {
   filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(7472%) hue-rotate(0deg);
 }
+
+.nav-logo-wrapper {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav-logo-wrapper img {
+  transition: filter 0.3s ease;
+}
+
+.nav-logo-wrapper:hover img {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 16px rgba(255, 255, 255, 0.5));
+}
