@@ -62,6 +62,17 @@ export default function RootLayout({
               {children}
             </div>
           </main>
+          <footer className="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
+            <div className="flex justify-end">
+              <Image
+                src="/img/zahir-logo.svg"
+                alt="Zahir"
+                width={100}
+                height={32}
+                className="h-6 w-auto"
+              />
+            </div>
+          </footer>
         </div>
       </body>
     </html>
