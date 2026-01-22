@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 max-w-3xl">
       <div>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wide text-amber-400 uppercase" style={{ fontFamily: 'video, sans-serif', fontWeight: 400 }}>
           <span className="bg-black px-2 py-1 inline-block">
