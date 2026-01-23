@@ -77,7 +77,7 @@ export default function AnimatedText({
     <TypeAnimation
       sequence={sequence}
       wrapper={wrapper as any}
-      speed={speed}
+      speed={speed as any}
       repeat={0}
       cursor={false}
       className={className}
