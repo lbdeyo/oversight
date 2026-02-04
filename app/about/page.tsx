@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import AboutClient from "./AboutClient";
+import AboutClient from "@/app/about/AboutClient";
 
 export const metadata: Metadata = {
   title: "About | Oversight",
