@@ -25,32 +25,34 @@ export default function AnimatedText({
   const storageKey = `oversight-animated-${pageKey}-${elementKey}`;
   const [shouldAnimate, setShouldAnimate] = useState<boolean | null>(null);
 
+  // Run only on mount so the completion timeout isn't cleared when parent re-renders
+  // (parent passes inline sequence array, so sequence ref changes every render)
   useEffect(() => {
-    // Check sessionStorage on mount
-    if (typeof window !== 'undefined') {
-      const hasAnimated = sessionStorage.getItem(storageKey);
-      if (hasAnimated === 'true') {
-        setShouldAnimate(false);
-      } else {
-        setShouldAnimate(true);
-        // Calculate total animation time and mark as complete
-        let totalTime = 0;
-        let totalChars = 0;
-        sequence.forEach((item) => {
-          if (typeof item === 'number') {
-            totalTime += item;
-          } else if (typeof item === 'string') {
-            totalChars += item.length;
-          }
-        });
-        const animationTime = totalTime + (totalChars * speed);
-        const timeout = setTimeout(() => {
-          sessionStorage.setItem(storageKey, 'true');
-        }, animationTime);
-        return () => clearTimeout(timeout);
-      }
+    if (typeof window === 'undefined') return;
+
+    const hasAnimated = sessionStorage.getItem(storageKey);
+    if (hasAnimated === 'true') {
+      setShouldAnimate(false);
+      return;
     }
-  }, [sequence, speed, storageKey]);
+
+    setShouldAnimate(true);
+    let totalTime = 0;
+    let totalChars = 0;
+    sequence.forEach((item) => {
+      if (typeof item === 'number') {
+        totalTime += item;
+      } else if (typeof item === 'string') {
+        totalChars += item.length;
+      }
+    });
+    const animationTime = totalTime + totalChars * speed;
+    const timeout = setTimeout(() => {
+      sessionStorage.setItem(storageKey, 'true');
+    }, animationTime);
+    return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: run once on mount so timeout isn't cleared by re-runs
+  }, []);
 
   // Extract the final text from the sequence
   const getFinalText = () => {
