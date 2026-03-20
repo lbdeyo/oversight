@@ -59,7 +59,7 @@ export default function RootLayout({
                 playsInline
                 className="absolute inset-0 h-full w-full rounded-lg object-cover object-top opacity-75 md:opacity-50"
               >
-                <source src="/vid/oversight-home-bg-sb.mp4" type="video/mp4" />
+                <source src="/vid/oversight-site-bg.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
