@@ -78,12 +78,20 @@ export default function RootLayout({
                     />
                   </Link>
                 </div>
-                <Link
-                  href="/about"
-                  className="text-white hover:text-amber-400 transition-colors duration-200"
-                >
-                  About
-                </Link>
+                <div className="flex items-center gap-6">
+                  <Link
+                    href="/newsletter"
+                    className="text-white hover:text-amber-400 transition-colors duration-200"
+                  >
+                    Newsletter
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="text-white hover:text-amber-400 transition-colors duration-200"
+                  >
+                    About
+                  </Link>
+                </div>
               </div>
             </div>
           </nav>
