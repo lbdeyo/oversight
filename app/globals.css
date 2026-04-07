@@ -1,22 +1,11 @@
 @import "tailwindcss";
 
-/* LTC Octic Gothic One & Two - from Typekit kit auu6bfp */
+/* thunderhouse-pro (display) — Typekit kit auu6bfp */
 @font-face {
-  font-family: "ltc-octic-gothic-one";
+  font-family: "thunderhouse-pro";
   src:
-    url("https://use.typekit.net/af/c341fc/00000000000000007736d89b/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
-    url("https://use.typekit.net/af/c341fc/00000000000000007736d89b/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: "ltc-octic-gothic-two";
-  src:
-    url("https://use.typekit.net/af/14aa5b/00000000000000007736d89c/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
-    url("https://use.typekit.net/af/14aa5b/00000000000000007736d89c/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff");
+    url("https://use.typekit.net/af/4861e8/00000000000000007735c849/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+    url("https://use.typekit.net/af/4861e8/00000000000000007735c849/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -36,16 +25,18 @@ html {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "ltc-octic-gothic-two", ui-sans-serif, sans-serif;
+  --font-sans: "liebeerika", ui-sans-serif, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "ltc-octic-gothic-two", sans-serif;
-  font-weight: 400;
+  font-family: "liebeerika", sans-serif;
+  font-weight: 700;
   font-style: normal;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .video-dot-mask {

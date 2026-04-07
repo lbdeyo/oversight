@@ -31,21 +31,21 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/auu6bfp.css" />
         <link
           rel="preload"
-          href="https://use.typekit.net/af/c341fc/00000000000000007736d89b/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3"
+          href="https://use.typekit.net/af/4bcb93/00000000000000007735b767/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="https://use.typekit.net/af/14aa5b/00000000000000007736d89c/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3"
+          href="https://use.typekit.net/af/4861e8/00000000000000007735c849/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         />
       </head>
       <body
-        className={`tk-ltc-octic-gothic-two ${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
+        className={`tk-liebeerika ${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
       >
         <div className="relative flex min-h-screen flex-col">
           {/* Video layer constrained to content area width */}

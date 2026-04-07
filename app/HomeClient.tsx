@@ -6,7 +6,7 @@ export default function HomeClient() {
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <p className="mb-2 text-xl text-white">
+        <p className="mb-2 text-[2.5rem] text-white">
           <span className="bg-black px-2 py-1 inline-block">
             <AnimatedText
               sequence={[
@@ -20,8 +20,8 @@ export default function HomeClient() {
           </span>
         </p>
         <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wide text-amber-400 uppercase"
-          style={{ fontFamily: '"ltc-octic-gothic-one", sans-serif', fontWeight: 400 }}
+          className="text-8xl sm:text-[7.5rem] md:text-[9rem] lg:text-[12rem] tracking-wide text-amber-400 uppercase"
+          style={{ fontFamily: '"thunderhouse-pro", sans-serif', fontWeight: 400 }}
         >
           <span className="bg-black px-2 py-1 inline-block">
             <AnimatedText
@@ -36,7 +36,7 @@ export default function HomeClient() {
             />
           </span>
         </h1>
-        <p className="mt-2 text-2xl text-white whitespace-pre-line">
+        <p className="mt-2 text-[3rem] text-white whitespace-pre-line">
           <span className="bg-black px-2 py-1 inline-block">
             <AnimatedText
               sequence={[

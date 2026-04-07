@@ -7,9 +7,9 @@ export default function AboutClient() {
     <div className="flex flex-col gap-8 max-w-3xl">
       <div>
         <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wide text-amber-400 uppercase"
+          className="text-8xl sm:text-[7.5rem] md:text-[9rem] lg:text-[12rem] tracking-wide text-amber-400 uppercase"
           style={{
-            fontFamily: '"ltc-octic-gothic-one", sans-serif',
+            fontFamily: '"thunderhouse-pro", sans-serif',
             fontWeight: 400,
           }}
         >
@@ -23,7 +23,7 @@ export default function AboutClient() {
             />
           </span>
         </h1>
-        <p className="mt-2 text-xl text-orange-400 whitespace-pre-line">
+        <p className="mt-2 text-[2.5rem] text-orange-400 whitespace-pre-line">
           <span className="bg-black px-2 py-1 inline-block">
             <AnimatedText
               sequence={[
@@ -37,7 +37,7 @@ export default function AboutClient() {
             />
           </span>
         </p>
-        <p className="mt-2 text-xl text-white whitespace-pre-line">
+        <p className="mt-2 text-[2.5rem] text-white whitespace-pre-line">
           <span className="bg-black px-2 py-1 inline-block">
             <AnimatedText
               sequence={[
@@ -51,7 +51,7 @@ export default function AboutClient() {
             />
           </span>
         </p>
-        <p className="mt-2 text-xl text-white whitespace-pre-line">
+        <p className="mt-2 text-[2.5rem] text-white whitespace-pre-line">
           <span className="bg-black px-2 py-1 inline-block">
             <AnimatedText
               sequence={[

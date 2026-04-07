@@ -18,15 +18,15 @@ export default function NewsletterClient() {
     <div className="flex flex-col gap-8 max-w-3xl">
       <div>
         <h1
-          className="text-3xl sm:text-[2.34375rem] md:text-[2.8125rem] lg:text-6xl tracking-wide text-amber-400 uppercase"
+          className="text-6xl sm:text-[4.6875rem] md:text-[5.625rem] lg:text-[7.5rem] tracking-wide text-amber-400 uppercase"
           style={{
-            fontFamily: '"ltc-octic-gothic-one", sans-serif',
+            fontFamily: '"thunderhouse-pro", sans-serif',
             fontWeight: 400,
           }}
         >
           <span className="bg-black px-2 py-1 inline-block">Newsletter</span>
         </h1>
-        <p className="mt-4 text-xl text-orange-400">
+        <p className="mt-4 text-[2.5rem] text-orange-400">
           <span className="bg-black px-2 py-1 inline-block">
             Sign up for news and updates about Oversight.
           </span>
