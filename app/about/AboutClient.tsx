@@ -42,7 +42,7 @@ export default function AboutClient() {
             <AnimatedText
               sequence={[
                 2600,
-                '"I have just alluded to the unusual nature of our security procedures, and, ah, well. You should already be aware of most of this, but I\'ll try to read these directives into the record. First of all, this is going to be a no-communications session. Absolutely no personal communication with the outside. No personal electronic devices, no phones, no cameras, no laptops. There will be no record of this meeting at all other than what good old Ms. Cromwell there jots down on her trusty stenotype machine." -- Rep. Erin Johnston, Committee Chair',
+                '"I have just alluded to the unusual nature of our security procedures. You should already be aware of most of this, but I\'ll try to read these directives into the record. First of all, this is going to be a no-communications session. Absolutely no personal communication with the outside. No personal electronic devices, no phones, no cameras, no laptops. There will be no record of this meeting at all other than what good old Ms. Cromwell there jots down on her trusty stenotype machine." -- Rep. Erin Johnston, Committee Chair',
               ]}
               wrapper="span"
               speed={85}
