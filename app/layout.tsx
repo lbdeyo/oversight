@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -113,6 +114,11 @@ export default function RootLayout({
             </a>
           </main>
         </div>
+        <Script
+          id="hs-script-loader"
+          src="https://js-na2.hs-scripts.com/244639378.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
