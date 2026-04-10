@@ -41,7 +41,7 @@ export default function HomeClient() {
             <AnimatedText
               sequence={[
                 4400,
-                "A new play by L.B. Deyo.\nComing to Austin, TX in 2026.",
+                "A new play by L.B. Deyo, coming to Austin, TX in 2026.",
               ]}
               wrapper="span"
               speed={50}
