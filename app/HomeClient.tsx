@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import AnimatedText from "./components/AnimatedText";
 
 export default function HomeClient() {
@@ -45,8 +46,16 @@ export default function HomeClient() {
               elementKey="subtitle"
             />
           </p>
-          <p className="mt-4 text-3xl font-normal uppercase leading-snug tracking-wide text-zinc-300 sm:text-4xl">
-            July 30–August 22 at Hyde Park Theatre
+          <p className="-mt-1 text-3xl font-normal uppercase leading-tight tracking-wide text-zinc-300 sm:-mt-2 sm:text-4xl">
+            July 30–August 22 at{" "}
+            <Link
+              href="https://www.hydeparktheatre.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-inherit transition-colors duration-200 hover:text-amber-400"
+            >
+              Hyde Park Theatre
+            </Link>
           </p>
         </div>
       </div>
