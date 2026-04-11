@@ -4,29 +4,27 @@ import AnimatedText from "./components/AnimatedText";
 
 export default function HomeClient() {
   return (
-    <div className="flex flex-col gap-8">
-      <div>
-        <p className="mb-2 text-[2.5rem] text-white">
-          <span className="bg-black px-2 py-1 inline-block">
-            <AnimatedText
-              sequence={[
-                "A secret commission. A ticking clock. A decision that can't be undone.",
-              ]}
-              wrapper="span"
-              speed={50}
-              pageKey="home"
-              elementKey="tagline"
-            />
-          </span>
+    <div className="flex flex-col gap-4 -mt-4 sm:-mt-2">
+      <div className="flex flex-col gap-0">
+        <p className="text-[2.5rem] leading-tight text-white">
+          <AnimatedText
+            sequence={[
+              "A secret commission. A ticking clock. A decision that can't be undone.",
+            ]}
+            wrapper="span"
+            speed={50}
+            pageKey="home"
+            elementKey="tagline"
+          />
         </p>
-        <h1
-          className="text-8xl sm:text-[7.5rem] md:text-[9rem] lg:text-[12rem] tracking-wide text-amber-400 uppercase"
-          style={{
-            fontFamily: '"thunderhouse-pro", sans-serif',
-            fontWeight: 400,
-          }}
-        >
-          <span className="bg-black px-2 py-1 inline-block">
+        <div className="-mt-3 flex flex-col sm:-mt-4 md:-mt-5 lg:-mt-6">
+          <h1
+            className="text-8xl sm:text-[7.5rem] md:text-[9rem] lg:text-[12rem] leading-none tracking-wide text-amber-400 uppercase"
+            style={{
+              fontFamily: '"thunderhouse-pro", sans-serif',
+              fontWeight: 400,
+            }}
+          >
             <AnimatedText
               sequence={[4000, "Oversight"]}
               wrapper="span"
@@ -34,10 +32,8 @@ export default function HomeClient() {
               pageKey="home"
               elementKey="h1"
             />
-          </span>
-        </h1>
-        <p className="mt-2 text-[3rem] text-white whitespace-pre-line">
-          <span className="bg-black px-2 py-1 inline-block">
+          </h1>
+          <p className="-mt-3 text-[3rem] leading-tight text-white whitespace-pre-line sm:-mt-4 md:-mt-5 lg:-mt-6">
             <AnimatedText
               sequence={[
                 4400,
@@ -48,8 +44,11 @@ export default function HomeClient() {
               pageKey="home"
               elementKey="subtitle"
             />
-          </span>
-        </p>
+          </p>
+          <p className="mt-4 text-3xl font-normal uppercase leading-snug tracking-wide text-zinc-300 sm:text-4xl">
+            July 30–August 22 at Hyde Park Theatre
+          </p>
+        </div>
       </div>
       <div className="w-full max-w-4xl">
         <div className="relative aspect-video overflow-hidden rounded-lg border border-zinc-800 bg-black">

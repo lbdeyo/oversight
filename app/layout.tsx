@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
+import BackgroundVideoLayer from "./components/BackgroundVideoLayer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,22 +49,7 @@ export default function RootLayout({
         className={`tk-liebeerika ${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
       >
         <div className="relative flex min-h-screen flex-col">
-          {/* Video layer constrained to content area width */}
-          <div className="fixed inset-0 z-0 flex justify-center">
-            <div className="absolute inset-0 bg-zinc-950" />
-            <div className="relative h-full w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-              <div className="absolute inset-0 rounded-lg bg-black" />
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 h-full w-full rounded-lg object-cover object-top opacity-75 md:opacity-50"
-              >
-                <source src="/vid/oversight-site-bg.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
+          <BackgroundVideoLayer />
           <nav className="sticky top-0 z-50 w-full bg-gray-950 backdrop-blur-sm border-b border-gray-800">
             <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 items-center justify-between">
@@ -96,7 +82,7 @@ export default function RootLayout({
               </div>
             </div>
           </nav>
-          <main className="relative z-10 mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 lg:px-8 min-h-[calc(100vh-4rem)]">
+          <main className="relative z-10 mx-auto w-full max-w-5xl flex-1 px-4 py-4 sm:px-6 sm:py-5 lg:px-8 lg:py-6 min-h-[calc(100vh-4rem)]">
             <div className="relative z-10">{children}</div>
             <a
               href="https://the-zahir.org"
