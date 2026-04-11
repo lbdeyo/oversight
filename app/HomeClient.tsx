@@ -18,7 +18,7 @@ export default function HomeClient() {
             elementKey="tagline"
           />
         </p>
-        <div className="-mt-3 flex flex-col sm:-mt-4 md:-mt-5 lg:-mt-6">
+        <div className="-mt-3 flex flex-col sm:-mt-4 md:-mt-5 lg:-mt-4">
           <h1
             className="text-8xl sm:text-[7.5rem] md:text-[9rem] lg:text-[12rem] leading-none tracking-wide text-amber-400 uppercase"
             style={{
@@ -34,7 +34,7 @@ export default function HomeClient() {
               elementKey="h1"
             />
           </h1>
-          <p className="-mt-3 text-[3rem] leading-tight text-white whitespace-pre-line sm:-mt-4 md:-mt-5 lg:-mt-6">
+          <p className="-mt-4 text-[3rem] leading-tight text-white whitespace-pre-line sm:-mt-4 md:-mt-5 lg:-mt-6">
             <AnimatedText
               sequence={[
                 4400,
