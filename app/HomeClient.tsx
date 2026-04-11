@@ -1,13 +1,38 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import AnimatedText from "./components/AnimatedText";
 
+/** Must match the subtitle string passed to AnimatedText (timing is derived from it). */
+const HOME_SUBTITLE =
+  "A new play by L.B. Deyo, coming to Austin, TX in 2026.";
+
+const SUBTITLE_ANIM_MS = 4400 + HOME_SUBTITLE.length * 50;
+/** Pause after subtitle typing ends, then reveal venue line */
+const VENUE_REVEAL_AFTER_SUBTITLE_MS = 450;
+
 export default function HomeClient() {
+  const [venueVisible, setVenueVisible] = useState(false);
+
+  useEffect(() => {
+    const skip =
+      sessionStorage.getItem("oversight-animated-home-subtitle") === "true";
+    if (skip) {
+      queueMicrotask(() => setVenueVisible(true));
+      return;
+    }
+    const id = window.setTimeout(
+      () => setVenueVisible(true),
+      SUBTITLE_ANIM_MS + VENUE_REVEAL_AFTER_SUBTITLE_MS,
+    );
+    return () => window.clearTimeout(id);
+  }, []);
+
   return (
     <div className="flex flex-col gap-4 -mt-4 sm:-mt-2">
       <div className="flex flex-col gap-0">
-        <p className="text-[2.5rem] leading-tight text-white">
+        <p className="text-[2.5rem] leading-none text-white">
           <AnimatedText
             sequence={[
               "A secret commission. A ticking clock. A decision that can't be undone.",
@@ -18,7 +43,7 @@ export default function HomeClient() {
             elementKey="tagline"
           />
         </p>
-        <div className="-mt-3 flex flex-col sm:-mt-4 md:-mt-5 lg:-mt-4">
+        <div className="-mt-3 flex flex-col sm:-mt-4 md:-mt-5 lg:-mt-2">
           <h1
             className="text-8xl sm:text-[7.5rem] md:text-[9rem] lg:text-[12rem] leading-none tracking-wide text-amber-400 uppercase"
             style={{
@@ -34,24 +59,29 @@ export default function HomeClient() {
               elementKey="h1"
             />
           </h1>
-          <p className="-mt-4 text-[3rem] leading-tight text-white whitespace-pre-line sm:-mt-4 md:-mt-5 lg:-mt-6">
+          <p className="-mt-4 text-[3rem] leading-none text-white whitespace-pre-line sm:-mt-4 md:-mt-5 lg:-mt-6">
             <AnimatedText
-              sequence={[
-                4400,
-                "A new play by L.B. Deyo, coming to Austin, TX in 2026.",
-              ]}
+              sequence={[4400, HOME_SUBTITLE]}
               wrapper="span"
               speed={50}
               pageKey="home"
               elementKey="subtitle"
             />
           </p>
-          <p className="-mt-1 text-3xl font-normal uppercase leading-tight tracking-wide text-zinc-300 sm:-mt-2 sm:text-4xl">
+          <p
+            className={`mt-4 text-3xl font-normal uppercase leading-none tracking-wide text-zinc-300 transition-[opacity,transform] duration-700 ease-out motion-reduce:transition-none sm:mt-5 sm:text-4xl ${
+              venueVisible
+                ? "translate-y-0 opacity-100"
+                : "pointer-events-none translate-y-2 opacity-0 motion-reduce:translate-y-0 select-none"
+            }`}
+            {...(!venueVisible ? { "aria-hidden": true } : {})}
+          >
             July 30–August 22 at{" "}
             <Link
               href="https://www.hydeparktheatre.org"
               target="_blank"
               rel="noopener noreferrer"
+              tabIndex={venueVisible ? 0 : -1}
               className="text-inherit transition-colors duration-200 hover:text-amber-400"
             >
               Hyde Park Theatre
