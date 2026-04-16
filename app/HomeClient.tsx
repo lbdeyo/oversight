@@ -5,8 +5,7 @@ import { useEffect, useState } from "react";
 import AnimatedText from "./components/AnimatedText";
 
 /** Must match the subtitle string passed to AnimatedText (timing is derived from it). */
-const HOME_SUBTITLE =
-  "A new play by L.B. Deyo, coming to Austin, TX in 2026.";
+const HOME_SUBTITLE = "A new play by L.B. Deyo, coming to Austin, TX in 2026.";
 
 const SUBTITLE_ANIM_MS = 4400 + HOME_SUBTITLE.length * 50;
 /** Pause after subtitle typing ends, then reveal venue line */
