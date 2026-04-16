@@ -2,13 +2,13 @@
 
 export default function BackgroundVideoLayer() {
   return (
-    <div className="pointer-events-none absolute inset-x-0 bottom-0 top-16 z-0">
+    <div className="pointer-events-none absolute inset-x-0 bottom-0 top-16 z-0 overflow-hidden">
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 h-full w-full object-cover object-top opacity-100"
+        className="absolute -top-[300px] inset-x-0 h-[calc(100%+300px)] w-full object-cover object-top opacity-100"
       >
         <source src="/vid/oversight-video-bg-comp.mp4" type="video/mp4" />
         <source src="/vid/oversight-video-bg-comp.mov" />
