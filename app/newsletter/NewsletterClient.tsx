@@ -2,8 +2,7 @@
 
 import { useEffect } from "react";
 
-const HUBSPOT_EMBED_SRC =
-  "https://js-na2.hsforms.net/forms/embed/244639378.js";
+const HUBSPOT_EMBED_SRC = "https://js-na2.hsforms.net/forms/embed/244639378.js";
 
 export default function NewsletterClient() {
   useEffect(() => {
@@ -24,10 +23,10 @@ export default function NewsletterClient() {
             fontWeight: 400,
           }}
         >
-          <span className="bg-black px-2 py-1 inline-block">Newsletter</span>
+          <span className=" px-2 py-1 inline-block">Newsletter</span>
         </h1>
         <p className="mt-4 text-[2.5rem] text-orange-400">
-          <span className="bg-black px-2 py-1 inline-block">
+          <span className=" px-2 py-1 inline-block">
             Sign up for news and updates about Oversight.
           </span>
         </p>

@@ -13,7 +13,7 @@ export default function AboutClient() {
             fontWeight: 400,
           }}
         >
-          <span className="bg-black px-2 py-1 inline-block">
+          <span className=" px-2 py-1 inline-block">
             <AnimatedText
               sequence={["About"]}
               wrapper="span"
@@ -24,7 +24,7 @@ export default function AboutClient() {
           </span>
         </h1>
         <p className="mt-2 text-[2.5rem] text-orange-400 whitespace-pre-line">
-          <span className="bg-black px-2 py-1 inline-block">
+          <span className="px-2 py-1 inline-block">
             <AnimatedText
               sequence={[
                 300,
@@ -38,7 +38,7 @@ export default function AboutClient() {
           </span>
         </p>
         <p className="mt-2 text-[2.5rem] text-white whitespace-pre-line">
-          <span className="bg-black px-2 py-1 inline-block">
+          <span className=" px-2 py-1 inline-block">
             <AnimatedText
               sequence={[
                 2600,
@@ -52,7 +52,7 @@ export default function AboutClient() {
           </span>
         </p>
         <p className="mt-2 text-[2.5rem] text-white whitespace-pre-line">
-          <span className="bg-black px-2 py-1 inline-block">
+          <span className=" px-2 py-1 inline-block">
             <AnimatedText
               sequence={[
                 12800,
