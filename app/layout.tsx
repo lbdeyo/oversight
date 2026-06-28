@@ -32,7 +32,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/auu6bfp.css" />
         <link
           rel="preload"
-          href="https://use.typekit.net/af/4bcb93/00000000000000007735b767/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3"
+          href="https://use.typekit.net/af/7411e2/000000000000000077359a44/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
@@ -46,7 +46,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`tk-liebeerika ${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
+        className={`tk-t26-carbon normal-case ${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950 text-zinc-50`}
       >
         <div className="relative flex min-h-screen flex-col">
           <BackgroundVideoLayer />

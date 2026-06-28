@@ -25,18 +25,18 @@ html {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "liebeerika", ui-sans-serif, sans-serif;
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "t26-carbon", ui-monospace, monospace;
+  --font-mono: "t26-carbon", ui-monospace, monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "liebeerika", sans-serif;
-  font-weight: 700;
+  font-family: "t26-carbon", monospace;
+  font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-transform: none;
 }
 
 .video-dot-mask {

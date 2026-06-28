@@ -1,6 +1,4 @@
-"use client";
-
-import AnimatedText from "../components/AnimatedText";
+import RichText from "@/app/components/RichText";
 
 export default function AboutClient() {
   return (
@@ -13,56 +11,33 @@ export default function AboutClient() {
             fontWeight: 400,
           }}
         >
-          <span className=" px-2 py-1 inline-block">
-            <AnimatedText
-              sequence={["About"]}
-              wrapper="span"
-              speed={40}
-              pageKey="about"
-              elementKey="h1"
-            />
-          </span>
+          <span className=" px-2 py-1 inline-block">About</span>
         </h1>
-        <p className="mt-2 text-[2.5rem] text-orange-400 whitespace-pre-line">
+        <p className="mt-2 text-[1.875rem] text-orange-400 whitespace-pre-line">
           <span className="px-2 py-1 inline-block">
-            <AnimatedText
-              sequence={[
-                300,
-                "Oversight is a thriller that traps its audience inside a closed committee hearing as lawmakers confront a consequential threat.",
-              ]}
-              wrapper="span"
-              speed={85}
-              pageKey="about"
-              elementKey="description"
-            />
+            <RichText>
+              *Oversight* is a thriller that traps its audience inside a closed
+              committee hearing as lawmakers confront a consequential threat.
+            </RichText>
           </span>
         </p>
-        <p className="mt-2 text-[2.5rem] text-white whitespace-pre-line">
+        <p className="mt-2 text-[1.875rem] text-white whitespace-pre-line">
           <span className=" px-2 py-1 inline-block">
-            <AnimatedText
-              sequence={[
-                2600,
-                '"I have just alluded to the unusual nature of our security procedures. You should already be aware of most of this, but I\'ll try to read these directives into the record. First of all, this is going to be a no-communications session. Absolutely no personal communication with the outside. No personal electronic devices, no phones, no cameras, no laptops. There will be no record of this meeting at all other than what good old Ms. Cromwell there jots down on her trusty stenotype machine." -- Rep. Erin Johnston, Committee Chair',
-              ]}
-              wrapper="span"
-              speed={85}
-              pageKey="about"
-              elementKey="quote1"
-            />
+            &ldquo;I have just alluded to the unusual nature of our security
+            procedures. You should already be aware of most of this, but
+            I&apos;ll try to read these directives into the record. First of all,
+            this is going to be a no-communications session. Absolutely no
+            personal communication with the outside. No personal electronic
+            devices, no phones, no cameras, no laptops. There will be no record
+            of this meeting at all other than what good old Ms. Cromwell there
+            jots down on her trusty stenotype machine.&rdquo; &mdash; Rep. Erin
+            Johnston, Committee Chair
           </span>
         </p>
-        <p className="mt-2 text-[2.5rem] text-white whitespace-pre-line">
+        <p className="mt-2 text-[1.875rem] text-white whitespace-pre-line">
           <span className=" px-2 py-1 inline-block">
-            <AnimatedText
-              sequence={[
-                12800,
-                '"It would be superfluous in me, Senator, to remind you that this is war." -- OpenBrain CEO Adam Harriman',
-              ]}
-              wrapper="span"
-              speed={50}
-              pageKey="about"
-              elementKey="quote2"
-            />
+            &ldquo;It would be superfluous in me, Senator, to remind you that
+            this is war.&rdquo; &mdash; OpenBrain CEO Adam Harriman
           </span>
         </p>
       </div>
