@@ -32,7 +32,7 @@ const MEMBER_CONFIG: Record<
   },
   "justin-smith": {
     title: "Vice President",
-    bio: "Justin G. Smith is an actor and musician originally from Memphis, Tennessee. A longtime performer within Austin's creative community, he has spent over a decade appearing on regional stages and recordings and has toured nationally and internationally as a musician. Recent theatre credits include productions with Dirty Gold, Ground Floor Theatre, Jarrott Productions, and more. Justin is most drawn to grounded, character driven stories.",
+    bio: "Justin G. Smith is an actor and musician originally from Memphis, Tennessee. A longtime performer within Austin's creative community, he has spent over a decade appearing on regional stages and recordings and has toured nationally and internationally as a musician. Recent theatre credits include productions with Dirty Gold, Ground Floor Theatre, Jarrott Productions, and more. Justin is most drawn to grounded, character-driven stories.",
   },
   "david-kroll": {
     title: "General Stossen",
