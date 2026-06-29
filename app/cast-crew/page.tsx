@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import RichText from "@/app/components/RichText";
-import { getCastCrewMembers } from "@/app/cast-crew/cast-crew";
+import { formatMemberTitle, getCastCrewMembers } from "@/app/cast-crew/cast-crew";
 
 export const metadata: Metadata = {
   title: "Cast & Crew | Oversight",
@@ -59,7 +59,7 @@ export default function CastCrewPage() {
                 {member.name}
               </h2>
               <p className="text-base leading-none text-amber-400 sm:text-lg">
-                {member.title}
+                {formatMemberTitle(member.title)}
               </p>
               <p className="text-base leading-snug text-zinc-400 sm:text-lg">
                 <RichText>{member.bio}</RichText>

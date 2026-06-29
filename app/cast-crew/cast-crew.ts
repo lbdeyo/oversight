@@ -4,6 +4,18 @@ import path from "path";
 const CAST_CREW_DIR = path.join(process.cwd(), "public/img/cast-crew");
 const IMAGE_EXT = /\.(jpe?g|png|webp)$/i;
 
+const CHARACTER_ROLES = new Set([
+  "Senator Greune",
+  "General Stossen",
+  "Secretary of State",
+  "Representative Johnston",
+  "Adam Harriman",
+  "Vice President",
+  "Cass Ogden",
+  "Kareem Najah",
+  "Ofelia Cromwell",
+]);
+
 const MEMBER_CONFIG: Record<
   string,
   { name?: string; title?: string; bio?: string }
@@ -66,6 +78,12 @@ const MEMBER_CONFIG: Record<
     title: "Scenic Designer",
     bio: "Monroe Oxley is a dynamic storyteller, artist, and educator whose work spans theatre, film, photography, and creative writing. A native Texan with over 16 years of experience as a Technical Director and scenic designer, Monroe has brought countless productions to life with his eye for detail and commitment to craftsmanship. For more than 14 years, he has also inspired students, teaching the technical and artistic skills needed to tell powerful stories on stage and screen.",
   },
+  "rommel-sulit": {
+    title: "Kareem Najah",
+  },
+  "janelle-buchanan": {
+    title: "Ofelia Cromwell",
+  },
 };
 
 export type CastCrewMember = {
@@ -74,6 +92,10 @@ export type CastCrewMember = {
   imageSrc: string;
   bio: string;
 };
+
+export function formatMemberTitle(title: string): string {
+  return CHARACTER_ROLES.has(title) ? `\u201C${title}\u201D` : title;
+}
 
 function slugFromFilename(filename: string): string {
   return filename.replace(/\.[^.]+$/, "");
@@ -121,9 +143,10 @@ export function getCastCrewMembers(): CastCrewMember[] {
   return filenames.map((filename, index) => {
     const slug = slugFromFilename(filename);
     const name = nameFromSlug(slug);
+    const title = placeholderTitle(slug, index);
     return {
       name,
-      title: placeholderTitle(slug, index),
+      title,
       imageSrc: `/img/cast-crew/${filename}`,
       bio: bioForMember(slug, name),
     };
