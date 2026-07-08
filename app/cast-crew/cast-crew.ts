@@ -75,6 +75,9 @@ const MEMBER_CONFIG: Record<
     title: "Costumer",
     bio: "Ivy is currently with Vortex Rep & The Zahir Productions. She studied at the University of Cosmetology Arts and Sciences and holds a B.A. in Theatre Design.",
   },
+  "oliver-pomerantz": {
+    title: "Stage Manager",
+  },
   "monroe-oxley": {
     title: "Scenic Designer",
     bio: "Monroe Oxley is a dynamic storyteller, artist, and educator whose work spans theatre, film, photography, and creative writing. A native Texan with over 16 years of experience as a Technical Director and scenic designer, Monroe has brought countless productions to life with his eye for detail and commitment to craftsmanship. For more than 14 years, he has also inspired students, teaching the technical and artistic skills needed to tell powerful stories on stage and screen.",
@@ -85,6 +88,7 @@ const MEMBER_CONFIG: Record<
   },
   "janelle-buchanan": {
     title: "Ofelia Cromwell",
+    bio: "Janelle Buchanan is a veteran actress with more than 100 theatre roles on her resume, plus many film, industrial, voice and print credits. An Actors Equity Association member for 25 years, now retired from the union, she has also managed and toured with a professional children's theatre ensemble; co-founded and managed an Austin theatre company and appeared at the Kennedy Center in its long-running hit, *In the West*; and served as the City of Austin's liaison between the Austin Arts Commission and local arts organizations. Representative Austin and regional productions include *My HEB*, *Doubt*, *The Grapes of Wrath*, *August: Osage County*, *The Laramie Project*, *Macbeth*, *Night of the Iguana*, *Deathtrap*, *Much Ado About Nothing*, and *Bleacher Bums*. She holds BFA and MFA degrees from the University of Texas Department of Theatre and Dance.",
   },
 };
 
