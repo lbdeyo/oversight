@@ -73,6 +73,7 @@ const MEMBER_CONFIG: Record<
   },
   "ivy-vidal": {
     title: "Costumer",
+    bio: "Ivy is currently with Vortex Rep & The Zahir Productions. She studied at the University of Cosmetology Arts and Sciences and holds a B.A. in Theatre Design.",
   },
   "monroe-oxley": {
     title: "Scenic Designer",
