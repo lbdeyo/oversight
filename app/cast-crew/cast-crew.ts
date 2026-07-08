@@ -80,6 +80,7 @@ const MEMBER_CONFIG: Record<
   },
   "rommel-sulit": {
     title: "Kareem Najah",
+    bio: "Rommel is a stage and film actor, producer and architect. Recent theatre credits include Hector in *FIXING TROILUS AND CRESSIDA* by Kirk Lynn (Rude Mechs) and King Henry IV in *HENRY IV* by you know who (Hidden Room Theatre). He is co-founder of Street Corner Arts whose recent productions *POCATELLO* by Samuel D. Hunter and *GROUNDED* by George Brant garnered (8) Austin Critics Table Award nominations. He trained at the School at Steppenwolf.",
   },
   "janelle-buchanan": {
     title: "Ofelia Cromwell",
