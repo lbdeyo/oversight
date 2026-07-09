@@ -28,7 +28,7 @@ const MEMBER_CONFIG: Record<
   "laura-deramo": {
     name: "Laura D'Eramo",
     title: "Secretary of State",
-    bio: "Laura D'Eramo is an Austin-based theatre and on-camera actor whose work spans classical, contemporary, and experimental performance. She received her B.A. from St. Edward's University and continued her training at the Atlantic Acting School in NYC. After graduation, Laura moved to Japan, teaching English for two years and performing with the Tokyo International Players, an experience that broadened her artistic and global perspective. Since returning to Austin in 2024, she has worked with Austin Shakespeare, Walking Shadow Shakespeare Project, The Filigree Theatre, The Stage Austin, and The Vortex. Recent credits include *MotherTree* at The Vortex and *Caesar+Antony+Cleopatra* with Walking Shadow Shakespeare. She recently appeared in The Stage Austin's *Titus Andronicus*.",
+    bio: "Laura D'Eramo is an Austin-based stage and on-camera actor. She earned her B.A. from St. Edward's University before continuing her training at the Atlantic Acting School in New York City. After graduating, she spent two years in Japan teaching English and performing with the Tokyo International Players.\n\nSince returning to Austin in 2024, Laura has appeared with Austin Shakespeare, Walking Shadow Shakespeare Project, The Filigree Theatre, The Stage Austin, and The Vortex. Recent credits include *Much Ado About Nothing* with Austin Shakespeare and *Caesar+Antony+Cleopatra* with Walking Shadow Shakespeare, the latter earning her an Austin Theatre Critics Award nomination for Best Performer.",
   },
   "jessica-cohen": {
     title: "Cass Ogden",

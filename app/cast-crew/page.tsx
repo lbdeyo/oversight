@@ -61,9 +61,13 @@ export default function CastCrewPage() {
               <p className="text-base leading-none text-amber-400 sm:text-lg">
                 {formatMemberTitle(member.title)}
               </p>
-              <p className="text-base leading-snug text-zinc-400 sm:text-lg">
-                <RichText>{member.bio}</RichText>
-              </p>
+              <div className="flex flex-col gap-3 text-base leading-snug text-zinc-400 sm:text-lg">
+                {member.bio.split(/\n\n+/).map((paragraph, index) => (
+                  <p key={index}>
+                    <RichText>{paragraph}</RichText>
+                  </p>
+                ))}
+              </div>
             </div>
           </li>
         ))}
