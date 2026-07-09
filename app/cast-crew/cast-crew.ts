@@ -69,7 +69,7 @@ const MEMBER_CONFIG: Record<
   },
   "robert-pierson": {
     title: "Senator Greune",
-    bio: "Robert Pierson was born in 1962 in Bethesda, Maryland, USA. He is an actor and composer, known for *Slacker* (1990), *You're Driving Me Crazy* (1990) and *Nadia: The Secret of Blue Water* (1990).",
+    bio: "Robert Pierson is an actor, director, musician, and producer. His stage work includes: *Waiting for Godot*, and *Caught* (Hyde Park Theatre), *Love and Information* (UT Theatre), *It is Magic* (B. Iden Payne Award, Actor in a Comedy), *The Goat or Who is Sylvia*, and *The Strangerer* (Capital T Theatre), *Catalina de Erauso*, and *Machinal* (paper chairs), *The Bigot* (UTNT - UT New Theatre), *The Hotel Vanya* (Natalie George Productions), *Bright Now Beyond*, *Pinkolandia*, *Heddatron*, *Mud*, *Tilt Angel*, and *Americamisfit* (Salvage Vanguard), *The Kindermann Depiction* and *Not Clown* (Physical Plant Theater), *Lipstick Traces*, *Cherrywood*, and *The B. Beaver Animation* (Rude Mechs). He is a company member with Hyde Park Theatre and Rude Mechs. Robert taught English, Speech, and Theater at the Texas School for the Blind and Visually Impaired for 30 years where he also directed the school's productions. You can hear his music at: [robertpierson.bandcamp.com](https://robertpierson.bandcamp.com)",
   },
   "ivy-vidal": {
     title: "Costumer",
