@@ -48,7 +48,7 @@ const MEMBER_CONFIG: Record<
   },
   "david-kroll": {
     title: "General Stossen",
-    bio: "David Kroll is known for *A Perfect World* (1993), *Virus* (2011) and *For Serious* (2014).",
+    bio: "David Kroll has been an actor, copywriter, video director, marketer, graphic designer, attorney, and through it all: a native Austinite. He's appeared in numerous plays, commercials, short videos, print ads, television episodes, films, and CD-ROMs (who remembers CD-ROMs?). His feature film appearances include *A Perfect World* and *Stop-Loss*. His most recent live performances were in Zach Theatre's *Jersey Boys* and Austin Opera's *Fiddler on the Roof*.",
   },
   "noah-masterson": {
     title: "Producer",
