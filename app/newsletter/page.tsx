@@ -9,14 +9,14 @@ export const metadata: Metadata = {
     title: "Newsletter | Oversight",
     description:
       "Sign up for the Oversight newsletter — news and updates about the play by L.B. Deyo.",
-    images: ["/og.png"],
+    images: ["/oversight-eye-og.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Newsletter | Oversight",
     description:
       "Sign up for the Oversight newsletter — news and updates about the play by L.B. Deyo.",
-    images: ["/og.png"],
+    images: ["/oversight-eye-og.png"],
   },
 };
 

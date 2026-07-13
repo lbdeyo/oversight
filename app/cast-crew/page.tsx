@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cast & Crew | Oversight",
     description: "Meet the cast and crew of Oversight.",
-    images: ["/og.png"],
+    images: ["/oversight-eye-og.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cast & Crew | Oversight",
     description: "Meet the cast and crew of Oversight.",
-    images: ["/og.png"],
+    images: ["/oversight-eye-og.png"],
   },
 };
 
