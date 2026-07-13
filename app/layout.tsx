@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import Script from "next/script";
 import "./globals.css";
 import BackgroundVideoLayer from "./components/BackgroundVideoLayer";
+import SiteNav from "./components/SiteNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,38 +50,7 @@ export default function RootLayout({
       >
         <div className="relative flex min-h-screen flex-col">
           <BackgroundVideoLayer />
-          <nav className="sticky top-0 z-50 w-full bg-gray-950 backdrop-blur-sm border-b border-gray-800">
-            <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-              <div className="flex h-16 items-center justify-between">
-                <div className="nav-logo-wrapper">
-                  <Link href="/" className="block">
-                    <Image
-                      src="/img/oversight-logo2.svg"
-                      alt="Oversight"
-                      width={140}
-                      height={40}
-                      priority
-                      className="h-[3.125rem] w-auto nav-logo-img"
-                    />
-                  </Link>
-                </div>
-                <div className="flex items-center gap-6">
-                  <Link
-                    href="/newsletter"
-                    className="text-white hover:text-amber-400 transition-colors duration-200"
-                  >
-                    Newsletter
-                  </Link>
-                  <Link
-                    href="/about"
-                    className="text-white hover:text-amber-400 transition-colors duration-200"
-                  >
-                    About
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </nav>
+          <SiteNav />
           <main className="relative z-10 mx-auto w-full max-w-5xl flex-1 px-4 py-4 sm:px-6 sm:py-5 lg:px-8 lg:py-6 min-h-[calc(100vh-4rem)]">
             <div className="relative z-10">{children}</div>
             <a
