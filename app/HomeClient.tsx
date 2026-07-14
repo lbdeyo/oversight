@@ -4,11 +4,11 @@ export default function HomeClient() {
   return (
     <div className="flex flex-col gap-4 -mt-4 sm:-mt-2">
       <div className="flex flex-col gap-0">
-        <p className="text-[1.875rem] leading-none text-white">
-          A secret commission. A ticking clock. A decision that can&apos;t be
-          undone.
+        <p className="text-[1.875rem] leading-none text-white text-pretty">
+          A secret commission. A ticking clock. A decision that can&apos;t
+          be&nbsp;undone.
         </p>
-        <div className="-mt-3 flex flex-col sm:-mt-4 md:-mt-5 lg:-mt-2">
+        <div className="mt-5 flex flex-col sm:-mt-4 md:-mt-5 lg:-mt-2">
           <h1
             className="text-8xl sm:text-[7.5rem] md:text-[9rem] lg:text-[12rem] leading-none tracking-wide text-amber-400 uppercase"
             style={{
