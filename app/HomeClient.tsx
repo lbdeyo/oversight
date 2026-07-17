@@ -22,7 +22,7 @@ export default function HomeClient() {
             A new play by L.B. Deyo, coming to Austin, TX in 2026.
           </p>
           <p className="mt-4 text-[1.375rem] font-normal leading-none tracking-wide text-zinc-300 sm:mt-5 sm:text-[1.6875rem]">
-            July 30–August 22 at{" "}
+            July 30-August 22 at{" "}
             <Link
               href="https://www.hydeparktheatre.org"
               target="_blank"
