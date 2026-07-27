@@ -84,7 +84,7 @@ const MEMBER_CONFIG: Record<
   },
   "rommel-sulit": {
     title: "Kareem Najah",
-    bio: "Rommel is a stage and film actor, producer and architect. Recent theatre credits include Hector in *FIXING TROILUS AND CRESSIDA* by Kirk Lynn (Rude Mechs) and King Henry IV in *HENRY IV* by you know who (Hidden Room Theatre). He is co-founder of Street Corner Arts whose recent productions *POCATELLO* by Samuel D. Hunter and *GROUNDED* by George Brant garnered (8) Austin Critics Table Award nominations. He trained at the School at Steppenwolf.",
+    bio: "Rommel Sulit is an Austin-based actor, producer, and architect. Most recently, he appeared as Dr. Frank Gibbs in Rude Mechs' acclaimed production of *Our Town*. Favorite stage credits include Thomas Arden in *Arden of Faversham* and King Henry IV in *Henry IV*, Warwick in *Rose Rage* (all with The Hidden Room Theatre); Hector in *Fixing Troilus and Cressida* (Rude Mechs); the Kralahome in ZACH Theatre's production of *The King and I*; Cousin Julio in *The Motherf\u2217\u2217ker with the Hat* (Capital T Theatre); and numerous productions with Street Corner Arts, the company he co-founded. His screen credits include *A Scanner Darkly*, *Mr. Brooks*, *Prison Break*, and *Friday Night Lights*. Rommel trained at the School at Steppenwolf and has received both Austin Critics Table and B. Iden Payne honors for his theatrical work. He is also a longtime advocate for Austin's arts community, including service on the board of the Austin Creative Alliance.",
   },
   "janelle-buchanan": {
     title: "Ofelia Cromwell",
