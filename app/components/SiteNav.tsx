@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "/newsletter", label: "Newsletter" },
   { href: "/about", label: "About" },
   {
-    href: "https://tickets.atxtheatre.org/events/oversight",
+    href: "https://tickets.atxtheatre.org/organizations/the-zahir",
     label: "Tickets",
     external: true,
   },

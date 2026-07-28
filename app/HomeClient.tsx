@@ -34,10 +34,10 @@ export default function HomeClient() {
           </p>
           <div className="mt-6 sm:mt-7">
             <Link
-              href="https://tickets.atxtheatre.org/events/oversight"
+              href="https://tickets.atxtheatre.org/organizations/the-zahir"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-lg bg-amber-400 px-8 py-3 text-lg leading-none text-zinc-950 transition-colors duration-200 hover:bg-amber-300 sm:text-xl"
+              className="inline-block rounded-lg bg-amber-400 px-12 py-[1.125rem] text-[1.6875rem] leading-none text-zinc-950 transition-colors duration-200 hover:bg-amber-300 sm:text-[1.875rem]"
             >
               Get tickets
             </Link>
