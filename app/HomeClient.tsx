@@ -4,6 +4,21 @@ export default function HomeClient() {
   return (
     <div className="flex flex-col gap-4 -mt-4 sm:-mt-2">
       <div className="flex flex-col gap-0">
+        <blockquote className="mb-4 text-[1.375rem] leading-tight text-pretty sm:text-[1.5rem]">
+          <Link
+            href="https://sunnewsaustin.com/2026/07/31/oversight-who-should-decide-ais-future/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-400 transition-colors duration-200 hover:text-amber-300"
+          >
+            &ldquo;Philosophical, political, deeply human and unnervingly
+            timely...an ambitious and provocative and well written work that
+            lingers long after the curtain falls.&rdquo;{" "}
+            <cite className="whitespace-nowrap not-italic text-zinc-400">
+              - Elise Krentzel, <em>Sun News Austin</em>
+            </cite>
+          </Link>
+        </blockquote>
         <p className="text-[1.875rem] leading-none text-white text-pretty">
           A secret commission. A ticking clock. A decision that can&apos;t
           be&nbsp;undone.
@@ -37,7 +52,7 @@ export default function HomeClient() {
               href="https://tickets.atxtheatre.org/organizations/the-zahir"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-lg bg-amber-400 px-12 py-[1.125rem] text-[1.6875rem] leading-none text-zinc-950 transition-colors duration-200 hover:bg-amber-300 sm:text-[1.875rem]"
+              className="inline-block rounded-lg bg-amber-400 px-12 py-4.5 text-[1.6875rem] leading-none text-zinc-950 transition-colors duration-200 hover:bg-amber-300 sm:text-[1.875rem]"
             >
               Get tickets
             </Link>
