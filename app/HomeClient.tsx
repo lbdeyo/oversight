@@ -34,7 +34,7 @@ export default function HomeClient() {
             Oversight
           </h1>
           <p className="-mt-4 text-[2.25rem] leading-none text-white whitespace-pre-line sm:-mt-4 md:-mt-5 lg:-mt-6">
-            A new play by L.B. Deyo, coming to Austin, TX in 2026.
+            A new play by L.B. Deyo, now playing.
           </p>
           <p className="mt-4 text-[1.375rem] font-normal leading-none tracking-wide text-zinc-300 sm:mt-5 sm:text-[1.6875rem]">
             July 30-August 22 at{" "}
