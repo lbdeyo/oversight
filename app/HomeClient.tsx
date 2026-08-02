@@ -19,6 +19,22 @@ export default function HomeClient() {
             </cite>
           </Link>
         </blockquote>
+        <blockquote className="mb-4 text-[1.375rem] leading-tight text-pretty sm:text-[1.5rem]">
+          <Link
+            href="https://www.broadwayworld.com/austin/article/Review-OVERSIGHT-at-Hyde-Park-Theatre-20260801"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-400 transition-colors duration-200 hover:text-amber-300"
+          >
+            &ldquo;Ambitious... unsettling... maintains a brisk pace...
+            relevant... fascinating... timely... introduces an extraordinary
+            range of ideas... increasingly urgent... thought-provoking... a
+            steadily escalating political thriller.&rdquo;{" "}
+            <cite className="whitespace-nowrap not-italic text-zinc-400">
+              - Sabrina Wallace, <em>Broadway World Austin</em>
+            </cite>
+          </Link>
+        </blockquote>
         <p className="text-[1.875rem] leading-none text-white text-pretty">
           A secret commission. A ticking clock. A decision that can&apos;t
           be&nbsp;undone.
