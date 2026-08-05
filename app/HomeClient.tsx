@@ -35,6 +35,16 @@ export default function HomeClient() {
             </cite>
           </Link>
         </blockquote>
+        <div className="mb-6 sm:mb-7">
+          <Link
+            href="https://tickets.atxtheatre.org/organizations/the-zahir"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-lg bg-amber-400 px-12 py-4.5 text-[1.6875rem] leading-none text-zinc-950 transition-colors duration-200 hover:bg-amber-300 sm:text-[1.875rem]"
+          >
+            Get tickets
+          </Link>
+        </div>
         <p className="text-[1.875rem] leading-none text-white text-pretty">
           A secret commission. A ticking clock. A decision that can&apos;t
           be&nbsp;undone.
@@ -49,9 +59,18 @@ export default function HomeClient() {
           >
             Oversight
           </h1>
-          <p className="-mt-4 text-[2.25rem] leading-none text-white whitespace-pre-line sm:-mt-4 md:-mt-5 lg:-mt-6">
-            A new play by L.B. Deyo, now playing.
-          </p>
+          <div className="-mt-4 flex flex-col gap-1 sm:-mt-4 md:-mt-5 lg:-mt-6">
+            <p className="text-[1.875rem] leading-none text-white">
+              A play by L.B. Deyo
+            </p>
+            <p className="text-[1.125rem] leading-tight text-white sm:text-[1.25rem]">
+              Winner - Outstanding Original Script, Austin Theatre Critics
+              Awards 2025-2026.
+            </p>
+            <p className="text-[1.875rem] leading-none text-white">
+              Now playing.
+            </p>
+          </div>
           <p className="mt-4 text-[1.375rem] font-normal leading-none tracking-wide text-zinc-300 sm:mt-5 sm:text-[1.6875rem]">
             July 30-August 22 at{" "}
             <Link
@@ -63,16 +82,6 @@ export default function HomeClient() {
               Hyde Park Theatre
             </Link>
           </p>
-          <div className="mt-6 sm:mt-7">
-            <Link
-              href="https://tickets.atxtheatre.org/organizations/the-zahir"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-lg bg-amber-400 px-12 py-4.5 text-[1.6875rem] leading-none text-zinc-950 transition-colors duration-200 hover:bg-amber-300 sm:text-[1.875rem]"
-            >
-              Get tickets
-            </Link>
-          </div>
         </div>
       </div>
       <div className="w-full max-w-4xl">
