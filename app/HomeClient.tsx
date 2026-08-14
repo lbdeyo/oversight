@@ -86,6 +86,21 @@ export default function HomeClient() {
             </cite>
           </Link>
         </blockquote>
+        <blockquote className="text-[1.375rem] leading-tight text-pretty sm:text-[1.5rem]">
+          <Link
+            href="https://ctxlivetheatre.com/reviews/20260814-review-3-of-3-oversight-by-lb-deyo-the-za/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-400 transition-colors duration-200 hover:text-amber-300"
+          >
+            &ldquo;Oversight is the very first production of the Zahir... and
+            the company couldn&apos;t have hoped for a more powerful and
+            engrossing debut.&rdquo;{" "}
+            <cite className="whitespace-nowrap not-italic text-zinc-400">
+              - Brian Paul Scipione, <em>CTX Live Theatre</em>
+            </cite>
+          </Link>
+        </blockquote>
       </div>
 
       <div className="w-full max-w-4xl">
