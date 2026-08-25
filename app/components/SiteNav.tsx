@@ -9,11 +9,6 @@ const NAV_LINKS = [
   { href: "/cast-crew", label: "Cast & Crew" },
   { href: "/newsletter", label: "Newsletter" },
   { href: "/about", label: "About" },
-  {
-    href: "https://tickets.atxtheatre.org/organizations/the-zahir",
-    label: "Tickets",
-    external: true,
-  },
 ] as const;
 
 const linkClassName =
