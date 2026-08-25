@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Oversight",
-  description: "Oversight site",
+  description:
+    "A play by L.B. Deyo. Presented by The Zahir at Hyde Park Theatre in Austin, 2026.",
 };
 
 export default function RootLayout({
