@@ -7,12 +7,13 @@ import { useEffect, useId, useState } from "react";
 
 const NAV_LINKS = [
   { href: "/cast-crew", label: "Cast & Crew" },
+  { href: "/licensing", label: "Licensing / EPK" },
   { href: "/newsletter", label: "Newsletter" },
   { href: "/about", label: "About" },
 ] as const;
 
 const linkClassName =
-  "text-white hover:text-amber-400 transition-colors duration-200";
+  "whitespace-nowrap text-base text-white hover:text-amber-400 transition-colors duration-200";
 
 export default function SiteNav() {
   const pathname = usePathname();
@@ -37,8 +38,8 @@ export default function SiteNav() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-gray-950 backdrop-blur-sm border-b border-gray-800">
       <div className="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="nav-logo-wrapper">
+        <div className="flex h-16 items-center justify-between gap-4">
+          <div className="nav-logo-wrapper shrink-0">
             <Link href="/" className="block" onClick={() => setOpen(false)}>
               <Image
                 src="/img/oversight-logo2.svg"
@@ -51,7 +52,7 @@ export default function SiteNav() {
             </Link>
           </div>
 
-          <div className="hidden items-center gap-6 md:flex">
+          <div className="hidden min-w-0 items-center gap-5 md:flex lg:gap-7">
             {NAV_LINKS.map((link) =>
               "external" in link && link.external ? (
                 <a
@@ -73,7 +74,7 @@ export default function SiteNav() {
 
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center text-white hover:text-amber-400 transition-colors duration-200 md:hidden"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center text-white hover:text-amber-400 transition-colors duration-200 md:hidden"
             aria-controls={menuId}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -104,7 +105,7 @@ export default function SiteNav() {
           inert={!open ? true : undefined}
           aria-hidden={!open}
           className={`md:hidden overflow-hidden border-t border-gray-800 transition-[max-height,opacity] duration-200 ease-out ${
-            open ? "max-h-64 opacity-100" : "max-h-0 opacity-0 border-t-0"
+            open ? "max-h-80 opacity-100" : "max-h-0 opacity-0 border-t-0"
           }`}
         >
           <div className="flex flex-col gap-1 py-3">
